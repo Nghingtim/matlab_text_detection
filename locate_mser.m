@@ -9,6 +9,7 @@ l_train=length(train);
 e_rec={};
 %%
 for i=1:l_train
+    i
     imagepath=train{i};
     img=imread(imagepath);
     e_rec{i}=mser_base(img);

@@ -17,7 +17,7 @@ for i=1:connComp.NumObjects
     %    stda(i,:)=statxture(data);
     if area(i)<500||area(i)>whole*0.4
         P_image(connComp.PixelIdxList{i})=0;
-     elseif width/height<1.5
+     elseif width/height<2
         P_image(connComp.PixelIdxList{i})=0;
         %     elseif stda(i,4)<0
         %     P_image(connComp.PixelIdxList{i})=0;

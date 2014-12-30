@@ -1,11 +1,12 @@
 clear all;
 load('t_rec.mat');
 load('t_imgname.mat');
-load('e_rec.mat');
-load('erec.mat');
+% load('e_rec.mat');
+% load('erec.mat');
+% load('q_e_rec.mat');
 load('e_imgname.mat');
-load('q_e_rec.mat');
-e_rec=erec;
+load('all_rec.mat')
+e_rec=all_rec;% e_rec为实验得到的框的数据
 %e_rec=q_e_rec;
 sum=0;
 for i=1:length(e_imgname)

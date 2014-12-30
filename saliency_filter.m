@@ -14,7 +14,7 @@ for i=1:connComp.NumObjects
     width=broder((i-1)*4+3);
     height=broder((i-1)*4+4);
      clu_sal_mean=mean(smap(connComp.PixelIdxList{i}));
-    if clu_sal_mean<1.75*img_sal_mean
+    if clu_sal_mean<1.5*img_sal_mean
       bwimg(connComp.PixelIdxList{i})=0;
 %     elseif area(i)<50||area(i)>0.3*whole
 %       bwimg(connComp.PixelIdxList{i})=0;
